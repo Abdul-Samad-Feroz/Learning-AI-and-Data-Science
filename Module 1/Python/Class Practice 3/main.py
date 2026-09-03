@@ -55,3 +55,23 @@ for i in range(times):
 for i in range(1, 101):
     if i % 3 == 0 and i % 5 == 0:
         print(i)
+
+total = 0
+for i in range(10):
+    number = 1 + i
+    total = number + total
+print(total)
+
+totalNum = 0
+for i in range(100):
+    num = 1 + i
+    if num % 2 == 0:
+        totalNum = num + totalNum
+print("Sum of even numbers from 1 to 100 is:", totalNum)
+
+count = 0
+for i in range(20):
+    nums = 1 + i
+    if nums % 2 == 0:
+        count += 1
+print("Count of even numbers between 1 to 20 is:", count)
