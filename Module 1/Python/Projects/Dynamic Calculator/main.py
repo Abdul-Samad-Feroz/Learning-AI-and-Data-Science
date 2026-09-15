@@ -1,14 +1,24 @@
 raw_num1 = input("Enter 1st Number: ").strip()
 if not raw_num1:
     print("❌ Error: Field cannot be empty!")
+    exit()
 else:
-    num1 = float(raw_num1)
+    try:
+        num1 = float(raw_num1)
+    except ValueError:
+        print("❌ Error: Please enter a valid number!")
+        exit()
 
-raw_num2 = input("Enter 2st Number: ").strip()
+raw_num2 = input("Enter 2nd Number: ").strip()
 if not raw_num2:
     print("❌ Error: Field cannot be empty!")
+    exit()
 else:
-    num2 = float(raw_num2)
+    try:
+        num2 = float(raw_num2)
+    except ValueError:
+        print("❌ Error: Please enter a valid number!")
+        exit()
 
 operation = input("Enter Operation you want to perform: ").strip()
 
@@ -19,10 +29,19 @@ elif operation == "-":
 elif operation == "*":
     print(f"Multiplication of {num1} and {num2} is:", num1 * num2)
 elif operation == "/":
-    print(f"Division of {num1} and {num2} is:", num1 / num2)
+    if num2 == 0:
+        print("❌ Error: Cannot divide by zero!")
+        exit()
+    else:
+        print(f"Division of {num1} and {num2} is:", num1 / num2)
 elif operation == "%":
-    print(f"Modulus of {num1} and {num2} is:", num1 % num2)
+    if num2 == 0:
+        print("❌ Error: Cannot calculate modulus with zero!")
+        exit()
+    else:
+        print(f"Modulus of {num1} and {num2} is:", num1 % num2)
 elif not operation:
     print("❌ Error: Field cannot be empty!")
+    exit()
 else:
-    print("Enter Valid Input!")
+    print("Invalid Input!")
