@@ -43,3 +43,8 @@ print(f"Final Bill: {finalBill}\n\n")
 
 print("    Thank you for shopping!     ")
 print("================================")
+
+
+
+
+# Task 2
