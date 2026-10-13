@@ -43,6 +43,7 @@ Learning-AI-and-Data-Science/
     └── Python/
         ├── Practice/
         └── Projects/
+        └── Tasks/
 ```
 
 The repository will continue to evolve as I progress through the program.
