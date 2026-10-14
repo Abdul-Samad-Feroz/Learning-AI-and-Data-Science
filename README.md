@@ -28,7 +28,7 @@ Currently focused on developing a strong foundation in Python through concepts, 
 | Conditional Statements                |
 | Loops                                 |
 | Functions                             |
-| Methods                                |
+| Methods                               |
 | Lists, Tuples, Dictionaries, and Sets |
 | Practice Exercises and Small Projects |
 
